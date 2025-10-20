@@ -18,6 +18,7 @@ public class Main {
             System.out.println("계산할 사칙연산 기호를 입력하세요(ex:+, -, *, /): ");
             char calculation = scanner.next().charAt(0); // char calculation = scanner.nextchar() 은 안되는것인가??
             // if (calculation == '+' || calculation == '-' || calculation == '*' || calculation == '/') {
+             // if 문은 굳이 사용할 필요없어서 삭제하였음.
             double result = 0;//((double) num1 - num2); //초기화를 시켜준다.
                 switch (calculation) {
                     case ('+'):
@@ -43,15 +44,22 @@ public class Main {
             System.out.println("결과: " + result);
 
             // 계속해서 계산을 진행 할것인지에 대한 스캐너 입력
-            scanner.nextLine();
+            scanner.nextLine();  // (엔터 버퍼 비우기)
             System.out.println("더 계산하시려면 1 ,종료하려면 exit 를 입력하세요");
             String ran = scanner.nextLine();
+            //System.out.println(ran);
+
+           // scanner.nextLine(); //이거는 엔터 값이 버퍼에 남아있다는건가?
+           // scanner.next(); //이거는 그럼 버퍼에 안남는다는건가? 스트링 토크나이저? 비슷? 엔터는 안들어가?
 
             // 계속해서 계산을 진행 할것인지에 대한 if 문 사용
-            if (ran.equals("1")) {
-                continue;
-            } else if (ran.equals("exit")) {
-                System.out.println("종료합니다.");
+//            if (ran.equals(" ")) {
+//                continue;
+//            } else if (ran.equals("exit")) {
+//                System.out.println("종료합니다.");
+//                System.exit(0);
+//            }
+            if("exit".equals(ran)) {
                 System.exit(0);
             }
 
