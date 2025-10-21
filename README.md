@@ -14,6 +14,7 @@ IntelliJ IDEA
 Oracle open JDK 17
 
 ## 주요기능
+<img width="1368" height="1642" alt="스크린샷 2025-10-20 221823" src="https://github.com/user-attachments/assets/b86937aa-2486-4521-9129-0aaa131492b3" />
 
 Lv1 계산기 
 
