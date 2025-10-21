@@ -13,8 +13,18 @@ Lv2 계산기 :25.10.18 ~25.10.20
 IntelliJ IDEA
 Oracle open JDK 17
 
-## 주요기능
+## 수기 로직 및 와이어프레임
+
+### Lv1 계산기
+
+![Screenshot_20251021_095133_Flexcil](https://github.com/user-attachments/assets/ee0f2f6c-4dde-4ac4-8041-3e83a5aca37b)
+
+
+### Lv2 계산기
+
 <img width="1368" height="1642" alt="스크린샷 2025-10-20 221823" src="https://github.com/user-attachments/assets/b86937aa-2486-4521-9129-0aaa131492b3" />
+
+## 주요기능
 
 Lv1 계산기 
 
