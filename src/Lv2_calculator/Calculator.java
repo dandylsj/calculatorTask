@@ -1,6 +1,5 @@
 package Lv2_calculator;
 
-import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
@@ -19,43 +18,67 @@ import java.util.ArrayList;
 public class Calculator {
 
     //1. 속성
-    public static ArrayList<Double> resultsList = new ArrayList<>(); //컬렉션 Arry배열을 사용하여 저장공간 <> 제네릭?
-    public static int firstNumber; //첫번째 숫자를 저장
-    public static int secondNumber; //두번째 숫자를 저장
-    public static String getCalculation; // 연산자를 저장
-    static double result; //계산값을 저장 하는공간
+    private ArrayList<Double> resultsList = new ArrayList<>(); //컬렉션 Arry배열을 사용하여 저장공간 <> 제네릭?
+    private double result; //계산값을 저장 하는공간
+    private String getContinue;
     
 
-
     //2.생성자
-    //public Calculator(resultsLists)
-
-
-
+    //없음.
 
     //3. 기능
+
+    public int getFirstNumber(int firstNumber){
+        //첫번째 숫자를 저장
+        return firstNumber;
+    }
+    public int getSecondNumber(int secondNumber) {
+        //두번째 숫자를 저장
+        return secondNumber;
+    }
+
+    public String setGetCalculation(String getCalculation) {
+        // 연산자를 저장
+        return getCalculation;
+    }
+    //결과값 불러오기
+    public double getResult(){
+        return this.result;
+    }
+    //계산된 결과를 리스트에 저장하기
+    public ArrayList<Double> getResultList(){
+        return resultsList;
+    }
+    //저장된 리스트 배열 정수를 삭제하는 기능
+    public void deleteResultList(int deleteResult){
+        resultsList.remove(deleteResult);
+    }
+
+
     //static 은 공유하는 공간이다.
-    static int addCalculate(int firstNumber, int secondNumber) {
+    void addCalculate (int firstNumber, int secondNumber) {
           result = firstNumber + secondNumber; //첫번째 숫자와 두번째 숫자를 더하여 result 에 저장
           resultsList.add(result);  //result를 Arry 배열에 추가한다.
-          return (int) result;  //결과 값을 돌려준다.
     }
-    static double substringCalculate (int firstNumber,int secondNumber){
-        result = firstNumber - secondNumber;
-        resultsList.add(result);
-        return result;
+    void substringCalculate (int firstNumber, int secondNumber){
+        result = firstNumber - secondNumber; //첫번째 숫자와 두번째 숫자를 빼서 result 에 저장
+        resultsList.add(result); //result를 Arry 배열에 추가한다.
     }
-    static  int multiplierCalculator (int firstNumber,int secondNumber){
-        result = firstNumber * secondNumber;
-        resultsList.add(result);
-        return (int) result;
+    void multiplierCalculator (int firstNumber, int secondNumber){
+        result = firstNumber * secondNumber; //첫번째 숫자와 두번째 숫자를 곱하여 result 에 저장
+        resultsList.add(result);//result를 Arry 배열에 추가한다.
     }
-    static double divisionCalculator (int firstNumber,int secondNumber){
-        result = (double) firstNumber / secondNumber;
-        resultsList.add(result);
-        return result;
+    void divisionCalculator (int firstNumber, int secondNumber){
+        result = (double) firstNumber / secondNumber; //첫번째 숫자와 두번째 숫자를 나누기해서 result 에 저장
+        resultsList.add(result);//result를 Arry 배열에 추가한다.
     }
-//    static String continue1 (String )
+    String setGetContinue (String getContinue){
+        //계산기를 더 진행할지에 대한 값을 저장
+        return getContinue;
+    }
+
+
+
     
     
 
