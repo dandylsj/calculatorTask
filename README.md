@@ -22,7 +22,8 @@ Oracle open JDK 17
 
 ### Lv2 계산기
 
-<img width="1368" height="1642" alt="스크린샷 2025-10-20 221823" src="https://github.com/user-attachments/assets/b86937aa-2486-4521-9129-0aaa131492b3" />
+<img width="1435" height="1730" alt="스크린샷 2025-10-21 095955" src="https://github.com/user-attachments/assets/133b7535-747a-464a-8dee-573b534121da" />
+
 
 ## 주요기능
 
